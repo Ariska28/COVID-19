@@ -1,0 +1,19 @@
+@import "variables/colors";
+@import "variables/sizes";
+@import "variables/typography";
+
+@import "mixins/breakpoints";
+
+/*-----------------------*/
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/layout';
+
+@import 'libraries/slick-theme';
+@import 'libraries/slick';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+
+
