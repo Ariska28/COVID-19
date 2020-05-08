@@ -1,0 +1,11 @@
+.el-description {
+    text-align: center;
+    padding: 1rem 0;
+    &--light {
+        color: $c-cream;
+    }
+
+    &--white {
+        color:$c-white;
+    }
+}

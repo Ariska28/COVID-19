@@ -1,0 +1,74 @@
+.c-illness {
+    display: flex;
+    width: 80%;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &__item {
+        width: 33%;
+        margin-right: 2rem;
+        &:last-child {
+            margin-right: 0; 
+        }
+
+        &-text {
+            font-size: $fs-text;
+            display: -webkit-box;
+            -webkit-line-clamp:4;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+
+        &-description {
+            background-color: $c-accent;
+            padding: 0.9rem 2rem;
+            height: 8.4rem;
+            overflow: hidden;
+        }
+
+        &-visualisation {
+            background-color: $c-cream;
+            padding: 1rem 2rem;
+            min-height: 17rem;
+            display: flex;
+        }
+
+        &-media {
+            margin: auto;
+        }
+
+        &-img {
+            max-width: 100%;
+        }
+
+        
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+       flex-wrap: wrap;
+       justify-content:flex-start;
+       &__item {
+           width:calc(50% - 2rem) ;
+           margin-bottom: 2rem;
+       }
+    }
+
+    @include media-breakpoint-down(sm) {
+        justify-content:center;
+        &__item {
+            width:calc(80% - 2rem) ;
+            margin-right: 0;
+        }
+     }
+
+     @include media-breakpoint-down(sm) {
+        &__item {
+            width:calc(100% - 2rem) ;
+        }
+     }
+
+}

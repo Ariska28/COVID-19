@@ -1,0 +1,14 @@
+.el-subtitle {
+    font-size: 24px;
+    color: $c-white;
+    text-align: center;
+    font-family: $font-title;
+    font-weight: normal;
+
+    &--grow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 2;
+    }
+}

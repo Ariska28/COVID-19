@@ -1,0 +1,32 @@
+.s-general {
+    padding: 2.69rem 0;  
+    &--black {
+        background-color: $c-black;
+        color:$c-white;
+    }
+
+    &--cream {
+        background-color: $c-light-yellow;
+    }
+    &__caption {
+        color:rgba(33, 23, 61, 0.4);
+        font-size: $fs-title;
+        font-family:$font-title;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__description {
+        color: $c-white; 
+        width: 70%;
+        margin: auto; 
+        text-align: center;
+        font-size: $fs-text;
+    }
+
+    @include media-breakpoint-down(lg) {
+        &__description {
+            width: 100%;
+        }
+    }
+}

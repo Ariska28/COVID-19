@@ -1,0 +1,290 @@
+{% extends "./layout/base.twig" %}
+{% set pageName = 'countries' %}
+
+{% block body %}
+	<div class="s-base s-base--town">
+		<div class="l-container">
+			<div class="s-base__wrapper">
+				<div class="s-base__content s-base__content--black">
+					<h1 class="el-caption el-caption--white">
+						This is statistic in our world
+					</h1>
+					<p class="el-description el-description--white">
+						The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS Zaandam cruise ship. The day is reset after midnight GMT+0.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="s-general">
+		<div class="c-cases">
+			<div class="c-cases__block">
+				<div class="c-cases__block-header c-cases__block-header--light">
+					<h3 class="el-caption-2">
+						Active cases
+					</h3>
+					<span class="c-cases__block-numbers">
+						171,839
+					</span>
+					<p class="c-cases__block-description">
+						Cases which had an outcome:
+					</p>
+				</div>
+
+				<div class="c-cases__block-footer">
+					<div class="c-cases__block-small c-cases__block-small--yellow">
+						<span class="c-cases__block-numbers">
+							460,347 (95%)
+						</span>
+						<p class="c-cases__block-description">
+							in Mild Condition
+						</p>
+					</div>
+
+					<div class="c-cases__block-small c-cases__block-small--pink">
+						<span class="c-cases__block-numbers">
+							25,248 (5%)
+						</span>
+						<p class="c-cases__block-description">
+							Serious or Critical
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="c-cases__block">
+				<div class="c-cases__block-header c-cases__block-header--dark">
+					<h3 class="el-caption-2">
+						Closes cases
+					</h3>
+					<span class="c-cases__block-numbers">
+						171,839
+					</span>
+					<p class="c-cases__block-description">
+						Cases which had an outcome:
+					</p>
+				</div>
+
+				<div class="c-cases__block-footer">
+					<div class="c-cases__block-small c-cases__block-small--green">
+						<span class="c-cases__block-numbers">
+							141,419 (82%)
+						</span>
+						<p class="c-cases__block-description">
+							Recovered / Discharged
+						</p>
+					</div>
+
+					<div class="c-cases__block-small c-cases__block-small--gray">
+						<span class="c-cases__block-numbers">
+							30,420 (18%)
+						</span>
+						<p class="c-cases__block-description">
+							Deaths
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="s-general s-general--black">
+		<div class="l-container">
+			<h2 class="el-caption-2">
+				Our world terrible
+			</h2>
+
+			<p class="s-general__description">
+				The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS Zaandam cruise ship. The day is reset after midnight GMT+0.
+																The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, anthe Holland America's MS Zaandam cruise ship. The day is reset after midnight GMT+0.
+																The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and
+			</p>
+		</div>
+	</div>
+
+	<div class="s-table">
+		<div class="l-container">
+			<div class="s-table-header">
+				<button class="s-table-header__btn">
+					Now
+				</button>
+				<button class="s-table-header__btn s-table-header__btn--last">
+					Yesterday
+				</button>
+				<form class="s-table-header__form">
+					<label class="s-table-header__form-label" for="site-search"></label>
+				    <input class="s-table-header__form-input" onkeyup="tableSearch()" type="search" placeholder="Search the site..." id="table-search" aria-label="Search through site content">
+				</form>
+				
+			</div>
+
+			<div class="s-table-wrapper">
+				<table class="s-table-tb" id="js-table">
+					<thead class="s-table-tb__head">
+						<tr class="s-table-tb__row s-table-tb__row--head">
+							<th class="s-table-tb__cell">Country</th>
+							<th class="s-table-tb__cell">Total cases</th>
+							<th class="s-table-tb__cell">New cases</th>
+							<th class="s-table-tb__cell">New deaths</th>
+							<th class="s-table-tb__cell">Total recovered</th>
+							<th class="s-table-tb__cell">Active cases</th>
+							<th class="s-table-tb__cell">Serious critical</th>
+							<th class="s-table-tb__cell">Tot cases</th>
+							<th class="s-table-tb__cell">Death</th>
+							<th class="s-table-tb__cell">1st case</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr class="s-table-tb__row s-table-tb__row--first">
+							<td class="s-table-tb__cell">USA</td>
+							<td class="s-table-tb__cell">112 000</td>
+							<td class="s-table-tb__cell">+20 000</td>
+							<td class="s-table-tb__cell">+3000</td>
+							<td class="s-table-tb__cell">150</td>
+							<td class="s-table-tb__cell">10 000 </td>
+							<td class="s-table-tb__cell">5000</td>
+							<td class="s-table-tb__cell">10</td>
+							<td class="s-table-tb__cell">20020</td>
+							<td class="s-table-tb__cell">1/30</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">1</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</th>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">2</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">3</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">4</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">5</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">6</td>
+							<td class="s-table-tb__cell">Red</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">7</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+						</tr>
+
+						<tr class="s-table-tb__row">
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</td>
+							<td class="s-table-tb__cell">-</th>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+	</div>
+
+	{{ }}
+{% endblock %}

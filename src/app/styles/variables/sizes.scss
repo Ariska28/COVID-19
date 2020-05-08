@@ -1,20 +1,13 @@
-$s-content: 960px;
-
-$s-content-padding: (
-  xs: 20px,
-  md: 30px
-);
-
-$s-section-padding-y: 30px;
+$s-content:75rem;//1200px;
 
 $grid-breakpoints: (
   xs: 0,
-  xsm: 460px,
+  xsm:460px,
   sm: 576px,
-  md: 600px,
-  lg: 970px,
-  xl: 1100px,
-  xxl: 1400px
+  md: 650px, 
+  lg: 950px,
+  xl: 1150px, 
+  xxl:1400px 
 ) !default;
 
 // This variable affects the `.h-*` and `.w-*` classes.
@@ -52,8 +45,4 @@ $spacers: map-merge(
   $spacers
 );
 
-$content-padding: 60px;
-$content-padding-sm: 20px;
 
-//$header-height: 80px;
-$header-height--mobile: 70px;

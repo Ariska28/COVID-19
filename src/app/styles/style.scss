@@ -3,17 +3,40 @@
 @import "variables/typography";
 
 @import "mixins/breakpoints";
+@import "mixins/on-circle";
 
 /*-----------------------*/
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/layout';
+@import 'layout/fonts';
+@import 'layout/reset';
+@import 'layout/layout';
 
 @import 'libraries/slick-theme';
 @import 'libraries/slick';
 
-@import 'layout/header';
-@import 'layout/footer';
+@import 'base/header';
+@import 'base/footer';
+
+@import 'elements/btn';
+@import 'elements/caption';
+@import 'elements/description';
+@import 'elements/subtitle';
+@import 'elements/arrow';
+@import 'elements/caption-2';
+
+@import 'components/diagram';
+@import 'components/illness';
+@import 'components/cases';
+@import 'components/accordeon';
+@import 'components/inf';
+
+@import 'sections/base';
+@import 'sections/statistic';
+@import 'sections/grow';
+@import 'sections/general';
+@import 'sections/table';
+
+
+
 
 
 

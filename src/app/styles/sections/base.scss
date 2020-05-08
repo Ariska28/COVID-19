@@ -1,0 +1,51 @@
+.s-base {
+    background-image: url('../images/home.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    &--town {
+        background-image: url('../images/Countries.jpg'); 
+    }
+
+    &--hand {
+        background-image: url('../images/hand.jpg');  
+    }
+
+    &--vaccination {
+        background-image: url('../images/vaccination.jpg');
+    }
+    &__wrapper {
+        padding:8.5rem 0 15rem ;
+        display: flex;
+        justify-content:flex-end;
+    }
+
+    &__content {
+        width: 40%;
+        padding: 2rem 1rem;
+        &--black {
+            background-color: rgba($c-black,0.71);
+        }
+
+        &--white {
+            background-color: rgba($c-white,0.41);
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &__content {
+            width: 100%;
+            background-color: rgba($c-white,0.9);
+            padding:1rem;
+
+            &--black {
+                background-color: rgba($c-black,0.71);
+                padding: 2rem 1rem;
+            }   
+        }
+    }
+}

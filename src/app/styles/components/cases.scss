@@ -1,0 +1,72 @@
+.c-cases {
+    @extend .l-container;
+    display: flex;
+    justify-content: center;
+
+    &__block {
+        margin-right: 5.5rem;
+        color: $c-brand;
+        width: 100%;
+        &-header {
+            color:$c-white;
+            padding: 0.5rem;
+            &--light {
+                background-color: $c-gray-blue;
+            }
+
+            &--dark {
+                background-color: $c-dark-gray-blue;
+            }
+        }
+
+        &-numbers {
+            font-weight: 600;
+            font-size: $fs-table;
+        }
+
+        &-description {
+            font-size: $fs-text;
+        }
+
+        &-description,&-numbers {
+            text-align: center;
+            display: block;
+        }
+
+        &-footer {
+            display: flex;
+        }
+
+        &-small {
+            width: 50%;
+            padding: 0.3125rem  2.5rem;
+            &--yellow {
+                background-color:$c-light-yellow;
+            }
+            &--pink {
+                background-color:$c-pink;
+            }
+            &--green {
+                background-color: $c-light-light-green;
+            }
+            &--gray {
+                background-color: $c-table;
+            }
+        }
+
+        
+        &:last-child {
+            margin-right: 0; 
+        }
+
+    }
+
+    @include media-breakpoint-down(lg) {
+        flex-wrap: wrap;
+
+        &__block {
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
+    }
+}

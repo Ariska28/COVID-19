@@ -1,0 +1,18 @@
+.el-caption {
+    font-family: $font-title;
+    font-size: $fs-title;
+    text-shadow: 7px 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding:1rem 0;
+    border-bottom: 1px solid $c-black;
+    color:$c-black;
+    &--blue {
+        text-shadow: 7px 4px 10px rgba(2, 33, 73, 0.25); 
+        border-bottom: 1px solid $c-blue;
+        color:$c-blue;
+    }
+    &--white {
+        border-bottom: 1px solid $c-white;
+        color:$c-white;
+    }
+}

@@ -1,0 +1,184 @@
+.s-table {
+    background-color: $c-background-table;
+    padding: 1rem 8%;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__btn {
+            border-radius: 15px;
+            border: 3px solid $c-gray;
+            color: $c-gray;
+            background-color: transparent;
+            padding: 0.1rem 1rem;
+            width: 7rem;
+            overflow: hidden;
+            margin-right: 1rem;
+
+            &--last {
+                margin-right: auto;
+            }
+        }
+
+        &__btn:focus {
+            background-color: $c-blue;
+            border: 1px solid $c-blue;
+            color: $c-white;
+        }
+
+        &__form {
+            position: relative;
+
+            &-label {
+                color: $c-table;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &-input {
+                border-radius: 15px;
+                border: none;
+                padding-left: 10px;
+                margin: 0.5rem 0;
+                width: 100%;
+            }
+
+        }
+
+    }
+
+
+    &-tb {
+        margin: auto;
+        width: 100%;
+        border-collapse: collapse;
+
+        &__head {
+            color: $c-white;
+        }
+
+        &__cell {
+            padding: 0.5rem 0.75rem;
+            border: 0.0625rem solid $c-table-border;
+        }
+
+        &__row {
+            background-color: $c-white;
+
+            &--head {
+                background-color: $c-table-header;
+            }
+
+            &--first {
+                background-color: $c-blue;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-tb {
+            &__cell {
+                padding: 0;
+            }
+        }
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            border-bottom: 12px solid $c-background-table;
+        }
+
+        td {
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        /*
+        Label the data
+        */
+        td:nth-of-type(1):before {
+            content: "Country";
+        }
+
+        td:nth-of-type(2):before {
+            content: "Total cases";
+        }
+
+        td:nth-of-type(3):before {
+            content: "New cases";
+        }
+
+        td:nth-of-type(4):before {
+            content: "New deaths";
+        }
+
+        td:nth-of-type(5):before {
+            content: "Total recovered";
+        }
+
+        td:nth-of-type(6):before {
+            content: "Active cases";
+        }
+
+        td:nth-of-type(7):before {
+            content: "Serious critical";
+        }
+
+        td:nth-of-type(8):before {
+            content: "Tot cases";
+        }
+
+        td:nth-of-type(9):before {
+            content: "Death";
+        }
+
+        td:nth-of-type(10):before {
+            content: "1st case";
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 1em 0;
+
+        &-header {
+            &__form {
+                width: 100%;
+            }   
+            &__btn {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+}

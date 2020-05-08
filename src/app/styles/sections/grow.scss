@@ -1,0 +1,21 @@
+.s-grow {
+    background: linear-gradient(180deg, $c-cream 37%, 
+    $c-brand 37%);
+    padding:4rem 0rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include media-breakpoint-down(md) {
+        background: linear-gradient(180deg, $c-cream 19%, 
+        $c-brand 19%);
+    }
+
+    @include media-breakpoint-down(sm) {
+        background: $c-brand;
+    }
+
+
+}

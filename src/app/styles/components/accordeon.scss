@@ -1,0 +1,31 @@
+.c-accordeon {
+    &__block {
+        margin-bottom: 1rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        &-header {
+            background-color: $c-light-green;
+            padding: 14px;
+            text-align: center;
+  
+        }
+        &-description  {
+            background-color: $c-light-yellow;
+            display: block;
+            padding: 14px;
+            transition: all 0.3s ease;
+            &.hide {
+                transform: scale(0);
+                top:-200px;
+                position: absolute;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &__block {
+            width: 100%;
+        }
+    }
+}

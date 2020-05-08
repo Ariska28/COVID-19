@@ -1,0 +1,59 @@
+{% block header %}
+<header class="b-header js-header">
+    <div class="b-header-wrapper">
+        <button class="b-header__big-button js-menu-btn">
+            <span class="visually-hidden">
+				closed mobile menu in all display
+			</span>
+        </button>
+
+        <a  href="#" class="b-header__media">
+            <img class="b-header__media-logo" src="/images/logo.png" alt="COVID logo">
+        </a>
+
+        <nav aria-label="navigation" class="b-header-nav js-navigation">
+            <ul class="b-header-nav__list">
+                <li class="b-header-nav__list-item">
+                    <a href="http://localhost:3000" class="b-header-nav__list-link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="b-header-nav__list-item">
+                    <a href="http://localhost:3000/countries.html" class="b-header-nav__list-link">
+                        Countries
+                    </a>
+                </li>
+
+                <li class="b-header-nav__list-item">
+                    <a href="http://localhost:3000/questions.html" class="b-header-nav__list-link">
+                        Information
+                    </a>
+                </li>
+
+                <li class="b-header-nav__list-item">
+                    <a href="http://localhost:3000/vaccination.html" class="b-header-nav__list-link">
+                        Vaccination
+                    </a>
+                </li>    
+            </ul>
+            <div class="btn">
+                <button aria-label="button" class="btn-base">
+                    Help
+                </button>
+            </div>
+        </nav>
+        
+        <button type="button" class="b-header__toggle js-menu-btn">
+			<span class="b-header__toggle-line"></span>
+			<span class="visually-hidden">
+				toggle mobile menu
+			</span>
+		</button>
+    </div>   
+</header>
+
+
+
+
+{{ }}{% endblock %}

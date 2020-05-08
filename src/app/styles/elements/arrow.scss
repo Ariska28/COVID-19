@@ -1,0 +1,33 @@
+.el-arrow {
+    &-prev {
+        background-image: url('../images/prev.png');
+        left: 1rem;
+        background-size: 100% 100%;
+        height: 50px;
+        width: 30px;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 50%;
+    }
+    &-next {
+        background-image: url('../images/next.png');
+        right: 1rem;
+        background-size: 100% 100%;
+        height: 50px;
+        width: 30px;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-prev {
+            top: 70%;
+        }
+        &-next {
+            top: 70%;
+        }  
+    }
+}

@@ -1,0 +1,31 @@
+.b-footer {
+    background-color: $c-dark-gray;
+    &-wrapper {
+        @extend .l-container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    &__description {
+        color:$c-accent;
+        margin-left: 1rem;
+        font-size: $fs-small;
+    }
+
+    @include media-breakpoint-down(md) {
+        &-wrapper {
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        &__description {
+            text-align: right;
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+}

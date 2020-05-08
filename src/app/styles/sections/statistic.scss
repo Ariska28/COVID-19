@@ -1,0 +1,38 @@
+.s-statistic {
+    display: flex;
+    background: linear-gradient(90deg, $c-brand 0%, $c-brand 50%, $c-white 50%, $c-white 100%);
+    &__block {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrapper {
+        display: flex;
+    }
+
+    @include media-breakpoint-down(md) {
+        background: linear-gradient(180deg, $c-brand 0%, $c-brand 40%, $c-white 40%, $c-white 100%);
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__block {
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+        background: linear-gradient(180deg, $c-brand 0%, $c-brand 50%, $c-white 50%, $c-white 100%);
+
+        &__block {
+            padding: 0.5rem;
+        }
+    
+    }
+
+}
