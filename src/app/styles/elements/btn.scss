@@ -1,22 +1,32 @@
 .btn {
-  margin-left: auto; 
-  
+  margin-left: auto;
+
   &-base {
-      border: none;
-      padding:0.5rem 2.2rem;
-      border-radius: 10px;
-      font-size: $fs-text;
-      color: $c-text;
-      font-family: $font-head;
-      background-color: $c-accent;
-      font-weight: 600;
-      border:2px solid $c-accent;
-      transition:border,background-color  0.3s ease-in;
-      
+    border: none;
+    padding: 0.5rem 2.2rem;
+    border-radius: 10px;
+    font-size: $fs-text;
+    color: $c-text;
+    font-family: $font-head;
+    background-color: $c-accent;
+    font-weight: 600;
+    border: 2px solid $c-accent;
+    transition: border, background-color 0.3s ease-in;
+
+
+
+    &:hover {
+      border: 2px solid rgba($c-text, 0.3);
+      background-color: transparent;
+    }
+
+    &--light {
       &:hover {
-        border:2px  solid  rgba($c-text,0.3);
-        background-color: transparent;
+        border: 2px solid rgba($c-accent, 0.3);
+        background-color: rgba($c-white, 0.2);
+        color: $c-accent;
       }
+    }
   }
 
   @include media-breakpoint-down(md) {

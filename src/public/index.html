@@ -1,186 +1,287 @@
 <!doctype html>
-<html lang="en" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
+<html lang="en">
 
-<head style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;">
-    <meta charset="UTF-8" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;">
-    <title style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"></title>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
-<body style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
+<body>
         
-<header class="b-header" style="-webkit-box-sizing: border-box; background-color: rgba(255, 255, 255, 0.66); box-sizing: border-box; display: block; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0; position: fixed; width: 100%;">
-    <div class="b-header-wrapper" style="-ms-flex-align: center; -webkit-align-items: center; -webkit-box-align: center; -webkit-box-sizing: border-box; align-items: center; background: transparent; border: 0; box-sizing: border-box; color: inherit; display: flex; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; margin-left: auto; margin-right: auto; max-width: 75rem; padding: 0; padding-bottom: 0.5rem; padding-left: 1.875rem; padding-right: 1.875rem; padding-top: 0.5rem; vertical-align: baseline;">
-        <a href="#" class="b-header__media" style="-webkit-box-sizing: border-box; box-sizing: border-box; display: flex; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; margin-right: auto; padding: 0;">
-            <img class="b-header__media-logo" src="/images/logo.png" alt="COVID logo" style="-webkit-box-sizing: border-box; background: transparent; border: none; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
+<header class="b-header js-header">
+    <div class="b-header-wrapper">
+        <button class="b-header__big-button js-menu-btn">
+            <span class="visually-hidden">
+				closed mobile menu in all display
+			</span>
+        </button>
+
+        <a  href="#" class="b-header__media">
+            <img class="b-header__media-logo" src="/images/logo.png" alt="COVID logo">
         </a>
 
-        <nav aria-label="navigation" class="b-header-nav js-navigation" style="-ms-flex-align: center; -webkit-align-items: center; -webkit-box-align: center; -webkit-box-sizing: border-box; align-items: center; box-sizing: border-box; display: flex; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;">
-            <ul class="b-header-nav__list" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; display: flex; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; list-style-type: none; margin: 0; margin-bottom: 0; padding: 0; vertical-align: baseline;">
-                <li class="b-header-nav__list-item" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
-                    <a href="#" class="b-header-nav__list-link" style="-o-transition: color 0.2s ease-in; -webkit-box-sizing: border-box; -webkit-transition: color 0.2s ease-in; box-sizing: border-box; color: #3D2C1D; font-family: 'Roboto', Arial, 'Open Sans', sans-serif; font-size: 0.875rem; font-weight: 600; margin: 0; margin-right: 2.5rem; padding: 0; text-decoration: none; transition: color 0.2s ease-in;">
+        <nav aria-label="navigation" class="b-header-nav js-navigation">
+            <ul class="b-header-nav__list">
+                <li class="b-header-nav__list-item">
+                    <a href="http://localhost:3000" class="b-header-nav__list-link">
                         Home
                     </a>
                 </li>
 
-                <li class="b-header-nav__list-item" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
-                    <a href="#" class="b-header-nav__list-link" style="-o-transition: color 0.2s ease-in; -webkit-box-sizing: border-box; -webkit-transition: color 0.2s ease-in; box-sizing: border-box; color: #3D2C1D; font-family: 'Roboto', Arial, 'Open Sans', sans-serif; font-size: 0.875rem; font-weight: 600; margin: 0; margin-right: 2.5rem; padding: 0; text-decoration: none; transition: color 0.2s ease-in;">
+                <li class="b-header-nav__list-item">
+                    <a href="http://localhost:3000/countries.html" class="b-header-nav__list-link">
                         Countries
                     </a>
                 </li>
 
-                <li class="b-header-nav__list-item" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
-                    <a href="#" class="b-header-nav__list-link" style="-o-transition: color 0.2s ease-in; -webkit-box-sizing: border-box; -webkit-transition: color 0.2s ease-in; box-sizing: border-box; color: #3D2C1D; font-family: 'Roboto', Arial, 'Open Sans', sans-serif; font-size: 0.875rem; font-weight: 600; margin: 0; margin-right: 2.5rem; padding: 0; text-decoration: none; transition: color 0.2s ease-in;">
+                <li class="b-header-nav__list-item">
+                    <a href="http://localhost:3000/questions.html" class="b-header-nav__list-link">
                         Information
                     </a>
                 </li>
 
-                <li class="b-header-nav__list-item" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
-                    <a href="#" class="b-header-nav__list-link" style="-o-transition: color 0.2s ease-in; -webkit-box-sizing: border-box; -webkit-transition: color 0.2s ease-in; box-sizing: border-box; color: #3D2C1D; font-family: 'Roboto', Arial, 'Open Sans', sans-serif; font-size: 0.875rem; font-weight: 600; margin: 0; margin-right: 2.5rem; padding: 0; text-decoration: none; transition: color 0.2s ease-in;">
+                <li class="b-header-nav__list-item">
+                    <a href="http://localhost:3000/vaccination.html" class="b-header-nav__list-link">
                         Vaccination
                     </a>
                 </li>    
             </ul>
+            <div class="btn">
+                <button aria-label="button" class="btn-base">
+                    Help
+                </button>
+            </div>
         </nav>
-
-        <div class="btn" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; margin-left: auto; padding: 0; vertical-align: baseline;">
-            <button aria-label="button" class="btn-help" style="-moz-appearance: none; -o-transition: border,background-color  0.3s ease-in; -webkit-appearance: none; -webkit-border-radius: 10px; -webkit-box-sizing: border-box; -webkit-transition: border,background-color  0.3s ease-in; appearance: none; background-color: #FFE600; border: 2px solid #FFE600; border-radius: 10px; box-sizing: border-box; color: #21173D; cursor: pointer; font-family: 'Roboto', Arial, 'Open Sans', sans-serif; font-size: 0.875rem; font-weight: 600; margin: 0; padding: 0.5rem 2.2rem; transition: border,background-color  0.3s ease-in;">
-                Help
-            </button>
-        </div>
-
-        <button type="button" class="b-header__toggle js-menu-btn" style="-moz-appearance: none; -ms-flex-align: center; -ms-flex-pack: center; -webkit-align-items: center; -webkit-appearance: none; -webkit-box-align: center; -webkit-box-pack: center; -webkit-box-sizing: border-box; -webkit-justify-content: center; align-items: center; appearance: none; background-color: transparent; border: none; box-sizing: border-box; cursor: pointer; display: none; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; height: 20px; justify-content: center; margin: 0; padding: 0; width: 20px;">
-			<span class="b-header__toggle-line" style="-webkit-box-sizing: border-box; background: transparent; background-color: #3D2C1D; border: 0; box-sizing: border-box; color: inherit; display: flex; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; height: 2px; margin: 0; padding: 0; position: relative; vertical-align: baseline; width: 20px;"></span>
-			<span class="visually-hidden" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; display: none; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
+        
+        <button type="button" class="b-header__toggle js-menu-btn">
+			<span class="b-header__toggle-line"></span>
+			<span class="visually-hidden">
 				toggle mobile menu
 			</span>
 		</button>
-
-    </div>
-    
+    </div>   
 </header>
 
 
+
+
     
     
-<div class="s-base" style="-webkit-background-size: cover; -webkit-box-sizing: border-box; background: transparent; background-attachment: fixed; background-image: url('../images/home.jpg'); background-position: center center; background-repeat: no-repeat; background-size: cover; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
-  <div class="l-container" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; margin-left: auto; margin-right: auto; max-width: 75rem; padding: 0; padding-left: 1.875rem; padding-right: 1.875rem; vertical-align: baseline;">
-    <div class="s-base__wrapper" style="-ms-flex-pack: end; -webkit-box-pack: end; -webkit-box-sizing: border-box; -webkit-justify-content: flex-end; background: transparent; border: 0; box-sizing: border-box; color: inherit; display: flex; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; justify-content: flex-end; margin: 0; padding: 8.5rem 0 15rem; vertical-align: baseline;">
-        <div class="s-base__content" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline; width: 40%;">
-          <h1 class="el-caption" style="-webkit-box-sizing: border-box; background: transparent; border: 0; border-bottom: 1px solid #000000; box-sizing: border-box; color: inherit; font-family: 'PaytoneOne', Arial, 'Open Sans', sans-serif; font-size: 2.5rem; margin: 0; padding: 1rem 0; text-align: center; text-shadow: 7px 4px 10px rgba(0, 0, 0, 0.25); vertical-align: baseline;">
-            Stay home
-          </h1>
-          <p class="el-description" style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 1rem 0; text-align: center; vertical-align: baseline;">
-            The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS Zaandam cruise ship. The day is reset after midnight GMT+0.
-          </p>
-        </div>
-    </div>
-  </div>
-</div>
+	<div class="s-base">
+		<div class="l-container">
+			<div class="s-base__wrapper">
+				<div class="s-base__content">
+					<h1 class="el-caption">
+						Stay home
+					</h1>
+					<p class="el-description">
+						The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS Zaandam cruise ship. The day is reset after midnight GMT+0.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="s-statistic">
+		<div class="l-container">
+			<div class="s-statistic__wrapper">
+				<div class="s-statistic__block">
+					<h3 class="el-subtitle el-subtitle--grow">
+						Confirmed Cases and Deaths by Country, Territory, or Conveyance
+						            ory, or Conveyanc?
+					</h3>
+					<p class="el-description el-description--light">
+						The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS Zaandam cruise ship. The day is reset after midnight GMT+0.
+					</p>
+				</div>
+
+				<div class="s-statistic__block">
+
+					<div class="c-diagram">
+						<div class="c-diagram__description">
+							<span class="c-diagram__description-item c-diagram__description-item--red">
+								infected
+							</span>
+							<span class="c-diagram__description-item c-diagram__description-item--black">
+								died
+							</span>
+							<span class="c-diagram__description-item c-diagram__description-item--blue">
+								recovered
+							</span>
+						</div>
+						<div class="c-diagram__lines">
+							<div class="c-diagram__lines-line c-diagram__lines-line--red"></div>
+
+							<div class="c-diagram__lines-line c-diagram__lines-line--black"></div>
+
+							<div class="c-diagram__lines-line c-diagram__lines-line--blue"></div>
+						</div>
+					</div>
+
+					<p class="el-description">
+						The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS Zaandam cruise ship. The day is reset after midnight GMT+0.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="s-grow">
+		<div class="l-container">
+			<div class="s-grow__wrapper">
+				<div class="c-illness">
+
+					<div class="c-illness__item">
+						<div class="c-illness__item-description">
+							<p class="c-illness__item-text">
+								Orld and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS
+							</p>
+						</div>
+
+						<div class="c-illness__item-visualisation">
+							<figure class="c-illness__item-media">
+								<img class="c-illness__item-img" src="/images/Group.png" alt="graphic in show peoples, which recover in different grow">
+							</figure>
+						</div>
+					</div>
+
+					<div class="c-illness__item">
+						<div class="c-illness__item-description">
+							<p class="c-illness__item-text">
+								Orld and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS
+							</p>
+						</div>
+
+						<div class="c-illness__item-visualisation">
+							<figure class="c-illness__item-media">
+								<img class="c-illness__item-img" src="/images/Group1.png" alt="graphic in show peoples, which recover in different grow">
+							</figure>
+						</div>
+					</div>
+
+					<div class="c-illness__item">
+						<div class="c-illness__item-description">
+							<p class="c-illness__item-text">
+								Orld and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS
+							</p>
+						</div>
+
+						<div class="c-illness__item-visualisation">
+							<figure class="c-illness__item-media">
+								<img class="c-illness__item-img" src="/images/Group 2.png" alt="graphic in show peoples, which recover in different grow">
+							</figure>
+						</div>
+					</div>
 
 
+				</div>
+			</div>
+		</div>
 
+	</div>
 
+	<div class="s-slider">
+		<div class="l-container">
+			<div class="s-slider__wrapper">
+				<h2 class="el-caption el-caption--blue">
+					This is our famous,you can call them
+				</h2>
+			</div>
 
+			<button class="el-arrow-prev"> </button>
+			<div class="c-slider">
+				<div class="c-slider__item">
+					<figure class="c-slider__item-media">
+						<img src="images/avatar.jpg" alt="" class="c-slider__item-img">
+					</figure>
+					<p class="c-slider__item-description">rld and 2 orld and 2 international conveyances: the Diamond Princess cruise ship </p>
+				</div>
 
+				<div class="c-slider__item">
+					<figure class="c-slider__item-media">
+						<img src="images/avatar.jpg" alt="" class="c-slider__item-img">
+					</figure>
+					<p class="c-slider__item-description">rld and 2 orld and 2 international conveyances: the Diamond Princess cruise ship </p>
+				</div>
 
+				<div class="c-slider__item">
+					<figure class="c-slider__item-media">
+						<img src="images/avatar.jpg" alt="" class="c-slider__item-img">
+					</figure>
+					<p class="c-slider__item-description">rld and 2 orld and 2 international conveyances: the Diamond Princess cruise ship </p>
+				</div>
 
+				<div class="c-slider__item">
+					<figure class="c-slider__item-media">
+						<img src="images/avatar.jpg" alt="" class="c-slider__item-img">
+					</figure>
+					<p class="c-slider__item-description">rld and 2 orld and 2 international conveyances: the Diamond Princess cruise ship </p>
+				</div>
 
+				<div class="c-slider__item">
+					<figure class="c-slider__item-media">
+						<img src="images/avatar.jpg" alt="" class="c-slider__item-img">
+					</figure>
+					<p class="c-slider__item-description">rld and 2 orld and 2 international conveyances: the Diamond Princess cruise ship </p>
+				</div>
 
+				<div class="c-slider__item">
+					<figure class="c-slider__item-media">
+						<img src="images/avatar.jpg" alt="" class="c-slider__item-img">
+					</figure>
+					<p class="c-slider__item-description">rld and 2 orld and 2 international conveyances: the Diamond Princess cruise ship </p>
+				</div>
 
+				<div class="c-slider__item">
+					<figure class="c-slider__item-media">
+						<img src="images/avatar.jpg" alt="" class="c-slider__item-img">
+					</figure>
+					<p class="c-slider__item-description">rld and 2 orld and 2 international conveyances: the Diamond Princess cruise ship </p>
+				</div>
 
+				<div class="c-slider__item">
+					<figure class="c-slider__item-media">
+						<img src="images/avatar.jpg" alt="" class="c-slider__item-img">
+					</figure>
+					<p class="c-slider__item-description">rld and 2 orld and 2 international conveyances: the Diamond Princess cruise ship </p>
+				</div>	
+			</div>
+			<button class="el-arrow-next"> </button>
+		</div>
+	</div>  
 
-
-
-
-
-
-
-
-
-aria-label - текстовое описание элемента, не переводится. Лучше использовать visually-hidden.
-aria-hidden - скрытый элемент из дерева доступности
-aria-labelledby - связывает элемент через id (задаём одному эл-ту id а в aria-labelledby  указываем название id)
-role=”region” - показывает важность контента, подходит для заголовка
-role=”alert” -  Сообщение с важной и, как правило срочной, информацией
-aria-expanded =”true”/”false”— показывает, развернут или свернут текущий элемент;
-role=”presentation” - Элемент чья семантически неявная роль не будет отображаться на доступности API.
- 1 и 3 дружат с nav main, но не с footer section article header.
-aria-current - На семантическом уровне атрибут aria-current - хороший выбор, чтобы передать, что элемент является текущим (текущая кнопка табуляции, текущая страница)
- aria-live - интерактив
-
- aria-label - текстовое описание элемента, не переводится. Лучше использовать visually-hidden.
-aria-hidden - скрытый элемент из дерева доступности
-aria-labelledby - связывает элемент через id (задаём одному эл-ту id а в aria-labelledby  указываем название id)
-role=”region” - показывает важность контента, подходит для заголовка
-role=”alert” -  Сообщение с важной и, как правило срочной, информацией
-aria-expanded =”true”/”false”— показывает, развернут или свернут текущий элемент;
-role=”presentation” - Элемент чья семантически неявная роль не будет отображаться на доступности API.
- 1 и 3 дружат с nav main, но не с footer section article header.
-aria-current - На семантическом уровне атрибут aria-current - хороший выбор, чтобы передать, что элемент является текущим (текущая кнопка табуляции, текущая страница)
- aria-live - интерактив
-
- aria-label - текстовое описание элемента, не переводится. Лучше использовать visually-hidden.
-aria-hidden - скрытый элемент из дерева доступности
-aria-labelledby - связывает элемент через id (задаём одному эл-ту id а в aria-labelledby  указываем название id)
-role=”region” - показывает важность контента, подходит для заголовка
-role=”alert” -  Сообщение с важной и, как правило срочной, информацией
-aria-expanded =”true”/”false”— показывает, развернут или свернут текущий элемент;
-role=”presentation” - Элемент чья семантически неявная роль не будет отображаться на доступности API.
- 1 и 3 дружат с nav main, но не с footer section article header.
-aria-current - На семантическом уровне атрибут aria-current - хороший выбор, чтобы передать, что элемент является текущим (текущая кнопка табуляции, текущая страница)
- aria-live - интерактив
-
- aria-label - текстовое описание элемента, не переводится. Лучше использовать visually-hidden.
-aria-hidden - скрытый элемент из дерева доступности
-aria-labelledby - связывает элемент через id (задаём одному эл-ту id а в aria-labelledby  указываем название id)
-role=”region” - показывает важность контента, подходит для заголовка
-role=”alert” -  Сообщение с важной и, как правило срочной, информацией
-aria-expanded =”true”/”false”— показывает, развернут или свернут текущий элемент;
-role=”presentation” - Элемент чья семантически неявная роль не будет отображаться на доступности API.
- 1 и 3 дружат с nav main, но не с footer section article header.
-aria-current - На семантическом уровне атрибут aria-current - хороший выбор, чтобы передать, что элемент является текущим (текущая кнопка табуляции, текущая страница)
- aria-live - интерактив
-
- aria-label - текстовое описание элемента, не переводится. Лучше использовать visually-hidden.
- aria-hidden - скрытый элемент из дерева доступности
- aria-labelledby - связывает элемент через id (задаём одному эл-ту id а в aria-labelledby  указываем название id)
- role=”region” - показывает важность контента, подходит для заголовка
- role=”alert” -  Сообщение с важной и, как правило срочной, информацией
- aria-expanded =”true”/”false”— показывает, развернут или свернут текущий элемент;
- role=”presentation” - Элемент чья семантически неявная роль не будет отображаться на доступности API.
-  1 и 3 дружат с nav main, но не с footer section article header.
- aria-current - На семантическом уровне атрибут aria-current - хороший выбор, чтобы передать, что элемент является текущим (текущая кнопка табуляции, текущая страница)
-  aria-live - интерактив
- 
-
-
-
-
-<!--<div class="your-class">
-    <div>your content4</div>
-    <div>your content5</div>
-    <div>your content6</div>
-    <div>your content7</div>
-    <div>your content8</div>
-    <div>your content9</div>
-  </div>-->
-           
+	
 
         
+	<footer class="b-footer">
+		<div class="b-footer-wrapper">
+            <div class="b-footer__button">
+                <button aria-label="button" class="btn-base">
+                    Map
+                </button>
+            </div>
 
+			<address class="b-footer__description">
+				Контакты: Арина Карманова, телефон: +375256552274, ariska.karmanova@gmail.com
+			</address>
+		</div>
 
+	</footer>
+
+	
 
     
-    <div style="-webkit-box-sizing: border-box; background: transparent; border: 0; box-sizing: border-box; color: inherit; display: none !important; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;">
-        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"><symbol viewBox="0 0 56 66" id="ic-pill" xmlns="http://www.w3.org/2000/svg" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"><rect width="41.684" height="22.462" rx="11.231" transform="rotate(128.393 15.091 25.055) skewX(-.019)" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"/><defs style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"><filter id="afilter0_d" x=".753" y="4.866" width="54.206" height="60.268" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"><feflood flood-opacity="0" result="BackgroundImageFix" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"/><fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"/><feoffset dy="4" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"/><fegaussianblur stdDeviation="2" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"/><fecolormatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"/><feblend in2="BackgroundImageFix" result="effect1_dropShadow" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"/><feblend in="SourceGraphic" in2="effect1_dropShadow" result="shape" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"/></filter></defs></symbol></svg>    </div>
+    <div style="display: none !important">
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 56 66" id="ic-pill" xmlns="http://www.w3.org/2000/svg"><rect width="41.684" height="22.462" rx="11.231" transform="rotate(128.393 15.091 25.055) skewX(-.019)"/><defs><filter id="afilter0_d" x=".753" y="4.866" width="54.206" height="60.268" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></symbol></svg>    </div>
 
-        <script src="/js/libraries.js" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"></script>
-    <script src="../js/libs/jquery-3.2.1.min.js" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"></script>
-    <script src="../js/libs/slick.js" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"></script>
-    <script src="../js/script.js" style="-webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Amiri', Arial, 'Open Sans', sans-serif; margin: 0; padding: 0;"></script>
+        <script src="/js/libraries.js"></script>
+    <script src="../js/libs/jquery-3.2.1.min.js"></script>
+    <script src="../js/libs/slick.js"></script>
+    <script src="../js/script.js"></script>
 
     </body>
 

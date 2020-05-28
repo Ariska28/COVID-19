@@ -2,8 +2,8 @@
 $().ready(function () {
     $().ready(function () {
         $('.c-slider').slick({
-            prevArrow: $('.el-arrow-next'),
-            nextArrow: $('.el-arrow-prev'),
+            prevArrow: $('.el-arrow-prev'),
+            nextArrow: $('.el-arrow-next'),
             dots: false,
             infinite: false,
             speed: 300,
@@ -34,6 +34,25 @@ $().ready(function () {
                 }
             ]
         });
+    });
+
+    $().ready(function () {
+        var location = window.location.href;
+        var cur_url = '/' + location.split('/').pop(); //Получаем адрес страниц  
+
+        $('.js-menu li').each(function () {
+            var link = $(this).find('a').attr('href');
+
+            if (cur_url == link) {
+                $(this).addClass('isCurrent');
+            }
+        });
+    });
+
+
+    $(".js-btn").click(function () {
+        alert('her!');
+        $('#exampleModal').arcticmodal();
     });
 
 });
@@ -152,33 +171,38 @@ function tableSearch() {
 
 
 const accordeon = document.querySelector('.js-accordeon');
+
 const descr = document.querySelectorAll('.c-accordeon__block-description');
 
-accordeon.onclick = function(e) {
-    let target = e.target;
-    
-    const openedBlock = document.querySelector('.c-accordeon__block-description:not(.hide)');
-    
-    if (
-        target.className == 'c-accordeon__block-header' ||
-        target.className == 'c-accordeon__block-description'
-    
-    ) {
-        hideAllDescription();
+if (accordeon) {
+    accordeon.onclick = function (e) {
+        let target = e.target;
+        
 
-    }
-    
-    
-    if(target.className == 'c-accordeon__block-header') {
-        if (target.nextElementSibling != openedBlock) {
-            target.nextElementSibling.classList.remove('hide');
+        const openedBlock = document.querySelector('.c-accordeon__block-description:not(.hide)');
+
+        if (
+            target.className == 'c-accordeon__block-header' ||
+            target.className == 'c-accordeon__block-description'
+
+        ) {
+            hideAllDescription();
+            alert('her!');
+
+        }
+
+
+        if (target.className == 'c-accordeon__block-header') {
+            if (target.nextElementSibling != openedBlock) {
+                target.nextElementSibling.classList.remove('hide');
+            }
         }
     }
 }
 
-function hideAllDescription() {
-    descr.forEach(element => element.classList.add('hide'));
-}
+
+
+
 
 
 

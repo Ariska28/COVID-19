@@ -12,7 +12,7 @@
   "criticalDirectory" : "critical",
 
   "sourcePath" : "src/app",
-  "destinationPath" : "src/public",
+  "destinationPath" : "",
   "temporaryPath" : "src/.tmp",
 
   "template_engine" : "twig",
